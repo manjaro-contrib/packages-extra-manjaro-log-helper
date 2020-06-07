@@ -3,14 +3,14 @@
 pkgname=manjaro-log-helper
 pkgdesc="Gathers selected system logs and optionally sends them to the internet."
 url=https://gitlab.manjaro.org/ste74/manjaro-log-helper
-pkgver=0.1
-pkgrel=2
-_commit=2586a7dc1008e5291ebdad645f8210012c45ea82
+pkgver=0.2
+pkgrel=1
+_commit=93134c25ee4036e1562af4019a3ef0f055a29aab
 arch=('any')
 license=('GPL2')
 depends=('bash' 'pastebinit' 'xclip' 'manjaro-icons' 'yad')
 source=("$pkgname-$_commit.tar.gz::$url/-/archive/$_commit/$pkgname-$_commit.tar.gz")
-sha512sums=('c693a57c15e8a8e3d7304272f7b07d84c3b6c976bfa18a748d14f21b7fcba2399f227b50173c0f3c7419d1a9ac5d0a5719e82c744b6308511a62649bfa8452e7')
+sha512sums=('9959ad3a7315a03c4e199fbe75886fece22ab2ad8b3c35b0c048bc48c0a09c098b3b87d995854fde498ae9a1b52d9ff816a7a7515e1cc6bd6617e6fcfd2897c2')
 
 package() {
   cd $pkgname-$_commit
