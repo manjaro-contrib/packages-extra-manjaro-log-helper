@@ -1,5 +1,5 @@
 # Maintainer: Stefano Capitani <stefano@manjaro.org>
- 
+
 pkgname=manjaro-log-helper
 pkgdesc='Gathers selected system logs and optionally sends them to the internet.'
 url=https://gitlab.manjaro.org/ste74/manjaro-log-helper
@@ -18,5 +18,5 @@ package() {
   install -Dm755 mlh $pkgdir/usr/bin/mlh
 
   install -d $pkgdir/usr/share/applications
-  install -Dm755 $pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
+  install -Dm644 $pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
 }
