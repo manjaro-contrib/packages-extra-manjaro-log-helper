@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc="Gathers selected system logs and optionally sends them to the internet."
 arch=('any')
 url="https://gitlab.manjaro.org/ste74/manjaro-log-helper"
-license=('GPL2')
+license=('GPL-2.0-or-later')
 depends=('bash' 'manjaro-icons' 'xclip' 'yad')
 makedepends=('git')
 _commit=a471e55d8b0cd1f15e45fa546f39dbec8092829a
@@ -14,12 +14,12 @@ source=("git+https://gitlab.manjaro.org/ste74/manjaro-log-helper.git#commit=$_co
 sha256sums=('SKIP')
 
 pkgver() {
-  cd "$srcdir/$pkgname"
+  cd "$pkgname"
   git describe --tags | sed 's/^v//;s/-/+/g'
 }
 
 package() {
-  cd "$srcdir/$pkgname"
+  cd "$pkgname"
   install -Dm755 mlh -t "$pkgdir/usr/bin/"
   install -Dm644 "$pkgname.desktop" -t "$pkgdir/usr/share/applications/"
 }
