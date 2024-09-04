@@ -10,8 +10,8 @@ license=('GPL-2.0-or-later')
 depends=('bash' 'manjaro-icons' 'xclip' 'yad')
 makedepends=('git')
 _commit=a471e55d8b0cd1f15e45fa546f39dbec8092829a
-source=("git+https://gitlab.manjaro.org/ste74/manjaro-log-helper.git#commit=$_commit")
-sha256sums=('SKIP')
+source=("git+https://gitlab.manjaro.org/ste74/manjaro-log-helper.git#commit=${_commit}")
+sha256sums=('cedf67698734a50b3ee827f13c05ef0f539424abc72188b4358227172b1901f1')
 
 pkgver() {
   cd "$pkgname"
