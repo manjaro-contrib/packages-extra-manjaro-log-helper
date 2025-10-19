@@ -2,12 +2,18 @@
 
 pkgname=manjaro-log-helper
 pkgver=0.3.4+3+ga471e55
-pkgrel=1
+pkgrel=2
 pkgdesc="Gathers selected system logs and optionally sends them to the internet."
 arch=('any')
 url="https://gitlab.manjaro.org/ste74/manjaro-log-helper"
 license=('GPL-2.0-or-later')
-depends=('bash' 'manjaro-icons' 'xclip' 'yad')
+depends=(
+  'bash'
+  'manjaro-icons'
+  'xclip'
+  'xdg-utils'
+  'yad'
+)
 makedepends=('git')
 _commit=a471e55d8b0cd1f15e45fa546f39dbec8092829a
 source=("git+https://gitlab.manjaro.org/ste74/manjaro-log-helper.git#commit=${_commit}")
