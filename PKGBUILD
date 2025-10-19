@@ -21,7 +21,7 @@ sha256sums=('cedf67698734a50b3ee827f13c05ef0f539424abc72188b4358227172b1901f1')
 
 pkgver() {
   cd "$pkgname"
-  git describe --tags | sed 's/^v//;s/-/+/g'
+  git describe --tags --abbrev=7 | sed 's/^v//;s/-/+/g'
 }
 
 package() {
